@@ -1,14 +1,12 @@
-class person {
-    constructor(name, age, gender, qualification, address) {
-        this.name=name;
-        this.age=age;
-        this.gender=gender;
-        this.qualification=qualification;
-        this.address=address;
+class price {
+    constructor(km, cost) {
+        this.km=km;
+        this.cost=cost;
+        
     }
 }
 greet = () => {
-return `details are ${name}`;
+return `${km * cost}`;
 }
-var myperson=new person("padma", 26, "female", "BE", "Kanchipuram")
-console.log(myperson);
+var myprice=new price(12, 20)
+console.log(`travel charge is ${12*20}`);
